@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+body{
+
+    background-image: linear-gradient(hsl(232, 19%, 15%) 0 30%,hsl(230, 17%, 14%) 30% 100%); 
+    min-height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#root-wrapper {
+    width : 85%;
+    padding: 25px 0px;
+
+}
+
+
+h1{
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+#TotalFollowers{
+    font-size: smaller;
+    color: hsl(228, 34%, 66%);
+}
+
+#Followersgridcontainer , .TodayStatusGridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    /*min-height: 100px;*/
+    margin-top: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.followersFlexContainer{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+}
+
+
+
+#Facebook{
+    border-top: solid hsl(208, 92%, 53%);
+}
+#Twitter{
+    border-top: solid hsl(203, 89%, 53%);
+}
+#Instagram{
+    border-top: 3px solid;
+    border-image: linear-gradient(to right,hsl(37, 97%, 70%) ,hsl(329, 70%, 58%) ) 1 0 0 0;
+    border-radius: 5px;
+}
+#Youtube{
+    border-top: solid hsl(348, 97%, 39%);    
+}
+.AccountImageAndName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div .AccountImageAndName > div {
+    font-size: 12px;
+    padding-left: 10px;
+    color: hsl(228, 34%, 66%);
+}
+
+.FollowersAndSubscribers{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: hsl(228, 34%, 66%);
+}
+
+.NumbersAndStatus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Facebook .NumbersAndStatus  > div{
+    color: hsl(163, 72%, 41%);
+}
+
+#Twitter .NumbersAndStatus > div{
+    color: hsl(163, 72%, 41%);
+}
+
+#Instagram .NumbersAndStatus > div{
+    color: hsl(163, 72%, 41%);
+}
+
+#Youtube .NumbersAndStatus  > div{
+    color: hsl(356, 69%, 56%);
+}
+
+div .NumbersAndStatus > div{
+    font-size: 8px;
+}
+
+.NumberOfFollowers{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.Overview{
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.TodayStatusFlexContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+ .StatusAndLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:self-end;
+} 
+
+div .StatusAndLogo > div{
+    font-size: 12px;
+    color: hsl(228, 34%, 66%);
+}
+
+.StatusNumbers{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    align-items: baseline;
+} 
+
+.Numbers{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.Percentage{
+    display: flex;
+    align-items: center;
+}
+
+.Percentage > div{
+    font-size: 8px;
+}
+
+.Up{
+ color: hsl(163, 72%, 41%);
+}
+
+.Down{
+ color: hsl(356, 69%, 56%);
+}
+
+.followersFlexContainer:hover{
+    background-color: hsl(228, 34%, 66%);
+    cursor: pointer;
+}
+
+.TodayStatusFlexContainer:hover{
+    background-color:hsl(228, 34%, 66%);
+    cursor:pointer;
+}
+
+@media screen and (max-width : 750px){
+    #Followersgridcontainer{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+    .TodayStatusGridContainer{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width : 520px){
+    #Followersgridcontainer, .TodayStatusGridContainer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .followersFlexContainer, .TodayStatusFlexContainer {
+        max-width: 260px;
+        width: 100%;
+    }
+
+
+}
