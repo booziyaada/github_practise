@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Javid's Dashboard</title>
 </head>
 <body>
-    My First github practise project
+  <div id="root-wrapper">
+    <h1 id="dashboard-title">Social Media Dashboard</h1>
+    <div id="TotalFollowers">Total Followers: 23,004</div>
+
+    <div id ="Followersgridcontainer">
+
+      <div class = "followersFlexContainer"  id="Facebook">
+        <div class="AccountImageAndName">
+          <img src="./images/icon-facebook.svg">
+          <div>@nathanf</div>
+        </div>      
+        <div class ="NumberOfFollowers">1987</div>
+        <div class="FollowersAndSubscribers">FOLLOWERS</div>
+        <div class="NumbersAndStatus">
+          <img src="./images/icon-up.svg">
+          <div>12 Today</div>
+        </div>
+      </div>
+      
+      <div class = "FollowersFlexContainer" id="Twitter">
+        <div class="AccountImageAndName">
+          <img src="./images/icon-twitter.svg">
+          <div>@nathanf</div>
+        </div>
+        <div class ="NumberOfFollowers">1044</div>
+        <div class="FollowersAndSubscribers">FOLLOWERS</div>
+        <div class="NumbersAndStatus">
+          <img src="./images/icon-up.svg">
+          <div>99 Today</div>
+        </div>
+      </div>
+      
+      <div class = "FollowersFlexContainer" id="Instagram">
+        <div class="AccountImageAndName">
+          <img src="./images/icon-instagram.svg">
+          <div>@realnathanf</div>
+        </div>
+        <div class ="NumberOfFollowers">11k</div>
+        <div class="FollowersAndSubscribers">FOLLOWERS</div>
+        <div class="NumbersAndStatus">
+          <img src="./images/icon-up.svg">
+          <div>1099 Today</div>
+        </div>
+      </div>
+      
+      <div class = "FollowersFlexContainer" id="Youtube">
+        <div class="AccountImageAndName">
+          <img src="./images/icon-youtube.svg">
+          <div>Nathan F.</div>
+        </div>
+        <div class ="NumberOfFollowers">8239</div>
+        <div class="FollowersAndSubscribers">SUBSCRIBERS</div>
+        <div class="NumbersAndStatus">
+          <img src="./images/icon-down.svg">
+          <div>144 Today</div>
+        </div>
+      </div>
+    
+    </div>
+
+    <h1 class="Overview">Overview - Today</h1>
+
+    <div class = "TodayStatusGridContainer">
+      <div class="TodayStatusFlexContainer" id="FacebookPageViews">
+        <div class="StatusAndLogo">
+          <div>Page Views</div>
+          <img src="./images/icon-facebook.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">87</div>
+          <div class ="Percentage">
+            <img src="./images/icon-up.svg">
+            <div class="Up">3%</div>
+          </div>
+        </div>
+      </div>
+      <div class="TodayStatusFlexContainer" id="FacebookLikes">
+        <div class="StatusAndLogo">
+          <div>Likes</div>
+          <img src="./images/icon-facebook.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">52</div>
+          <div class="Percentage">
+            <img src="./images/icon-down.svg">
+            <div class="Down">2%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="TodayStatusFlexContainer" id="InstagramLikes">
+        <div class="StatusAndLogo">
+          <div>Likes</div>
+          <img src="./images/icon-instagram.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">5462</div>
+          <div class ="Percentage">
+            <img src="./images/icon-up.svg">
+            <div class="Up">2257%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="TodayStatusFlexContainer" id="InstagramProfileViews">
+        <div class="StatusAndLogo">
+          <div>Profile Views</div>
+          <img src="./images/icon-instagram.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">52k</div>
+          <div class ="Percentage">
+            <img src="./images/icon-up.svg">
+            <div class="Up">1375%</div> 
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="TodayStatusFlexContainer" id="TwitterRetweets">
+        <div class="StatusAndLogo">
+          <div>Retweets</div>
+          <img src="./images/icon-twitter.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">117</div>
+          <div class ="Percentage">
+            <img src="./images/icon-up.svg">
+            <div class="Up">303%</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="TodayStatusFlexContainer" id="TwitterLikes">
+        <div class="StatusAndLogo">
+          <div>Likes</div>
+          <img src="./images/icon-twitter.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">507</div>
+          <div class ="Percentage">
+            <img src="./images/icon-up.svg">
+            <div class="Up">553%</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="TodayStatusFlexContainer" id="YoutubeLikes">
+        <div class="StatusAndLogo">
+          <div>Likes</div>
+          <img src="./images/icon-youtube.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">107</div>
+          <div class ="Percentage">
+            <img src="./images/icon-down.svg">
+            <div class="Down">19%</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="TodayStatusFlexContainer" id="YoutubeTotalViews">
+        <div class="StatusAndLogo">
+          <div>Total Views</div>
+          <img src="./images/icon-youtube.svg">
+        </div>
+        <div class="StatusNumbers">
+          <div class="Numbers">1407</div>
+          <div class ="Percentage">
+            <img src="./images/icon-down.svg">
+            <div class="Down">12%</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
+
+<!-- <div class="attribution"> 
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->
